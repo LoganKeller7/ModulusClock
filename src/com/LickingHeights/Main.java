@@ -25,10 +25,9 @@ public class Main {
             minutes = keyboard.nextInt();
 
             hours = minutes >= 60 ? ++hours: hours;
-            minutes = minutes >= 60 ? minutes -60: minutes;
 
-            System.out.println();
-
+            hours = hours >= 12 ? hours-12: hours;
+            
             System.out.println("The time is: " + hours + ":" + minutes);
 
     }
