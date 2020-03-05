@@ -13,6 +13,8 @@ public class Main {
         int hours;
         int minutes;
 
+
+
             Scanner keyboard;
             keyboard = new Scanner(System.in);
 
@@ -21,6 +23,11 @@ public class Main {
 
             System.out.println("Enter a value for minutes");
             minutes = keyboard.nextInt();
+
+            hours = minutes >= 60 ? ++hours: hours;
+            minutes = minutes >= 60 ? minutes -60: minutes;
+
+            System.out.println();
 
             System.out.println("The time is: " + hours + ":" + minutes);
 
