@@ -30,9 +30,6 @@ public class Main {
 
             System.out.println(minutes % 60);
 
-            
-
-            System.out.println("The time is: " + hours + ":" + minutes );
-
+            System.out.printf("The time is: %d:%02d",hours,(minutes % 60));
     }
 }
